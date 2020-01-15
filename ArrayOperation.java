@@ -54,7 +54,7 @@ class functions
 	public void insert(int arr[],int size,int location,int value)
 	{
 		//System.out.println("Please enter the elements to be inserted");
-		for(int i=size;i>location-1;i--)
+		for(int i=size;i>=location-1;i--)
 		{
 			arr[i+1]=arr[i];
 		}
