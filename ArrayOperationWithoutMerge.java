@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ArrayOperation
+public class ArrayOperationWithoutMerge
 {
 	public static void main(String[] args)
 	{
