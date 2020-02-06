@@ -91,7 +91,7 @@ class functions
 	public void delete(int arr[],int size,int location2)
 	{
 //out.println("Enter the element position to be deleted");
-		for(int i=location2;i<size;i++)
+		for(int i=location2-1;i<size;i++)
 		{
 			arr[i]=arr[i+1];
 		}
