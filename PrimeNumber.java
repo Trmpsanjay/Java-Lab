@@ -1,5 +1,5 @@
 import java.util.*;
-class PrimeNumber{
+public class PrimeNumber{
 	public static void main(String[] args) {
 		
 	
@@ -13,24 +13,17 @@ class PrimeNumber{
 	int last=sc.nextInt();
 	int count=0;
 
-	for(int i=start;i<=last;i++)
-	{
+	for(int i=start;i<=last;i++){
 		int flag=0;
-		for(int j=2;j<i;j++)
-		{
-			if(i%j==0)
-			{	flag=1;
+		for(int j=2;j<i;j++){
+			if(i%j==0){	
+				flag=1;
 				break;
 			}
 		}
 
 		if(flag==0)
 			System.out.println(i);
-
+		}
 	}
-
-	
-
-
-}
 }
