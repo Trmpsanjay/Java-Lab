@@ -36,8 +36,11 @@ class functions{
 		node newnode=new node(d);
 		node ptr;
 		ptr=start;
-		while(ptr.data!=key){
-			ptr=ptr.next;
+		while(ptr!=null){
+			if(ptr.data==key)
+				break;
+			else
+				ptr=ptr.next;
 		}
 		if(ptr==null)
 			System.out.println("Key is not in Linked List");
