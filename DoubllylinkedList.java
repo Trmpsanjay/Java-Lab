@@ -45,8 +45,11 @@ class functions{
 			node newnode=new node(k);
 			node ptr;
 			ptr=start;
-			while(ptr.data!=key){
-				ptr=ptr.next;
+			while(ptr!=null){
+				if(ptr.data==key)
+					break;
+				else
+					ptr=ptr.next;
 			}
 			if(ptr==null)
 			{
