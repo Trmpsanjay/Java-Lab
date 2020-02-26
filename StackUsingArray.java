@@ -26,7 +26,7 @@ public class StackUsingArray {
 						}
 						break;
 				case 3: System.out.println("STACK elements are");
-						for(int i=0;i<=top;i++)
+						for(int i=top;i>=0;i--)
 							System.out.print(stack[i]+" ");
 						break;
 				default : 
