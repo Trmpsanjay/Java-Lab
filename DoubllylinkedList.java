@@ -98,6 +98,19 @@ class functions{
 				ptr=ptr.next;
 			}
 		}
+		void traverseback(){
+			node ptr;
+			ptr=last;
+			while(ptr!=start){
+				if(ptr==start)
+					System.out.print(ptr.data);
+				else{
+					System.out.print(ptr.data+"->");
+					ptr=ptr.previous;
+				}
+			}
+			System.out.print(start.data);
+		}
 
 }
 
@@ -108,7 +121,7 @@ public class DoubllylinkedList{
 		functions f=new functions();
 		do{
 			System.out.print("\n  \n \n \n 1.Insert at First \n 2.Insert at Last \n 3.Insert at Position \n");
-			System.out.print("4.Delete First \n 5.Delete Last \n 6.Delete at Position \n 7.Display \n");
+			System.out.print("4.Delete First \n 5.Delete Last \n 6.Delete at Position \n 7.Display \n 8.traverseback \n");
 			choice=sc.nextInt();
 			switch(choice){
 				case 1:	System.out.println("Enter the value to be inserted");
@@ -135,10 +148,12 @@ public class DoubllylinkedList{
 						break;
 				case 7:	f.traverse();
 						break;
+				case 8: f.traverseback();
+						break;
 				default : System.out.println("Invalid Option");
 			}
 		}
-		while(choice<8);
+		while(choice<9);
 		
 	}
 }
