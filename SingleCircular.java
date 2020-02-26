@@ -15,11 +15,12 @@ class functions{
 		if(start==null){
 			start=newnode;
 			last=newnode;
-			newnode.next=last;
+			last.next=start;
 		}
 		else{
 			newnode.next=start;
 			start=newnode;
+			last.next=start;
 		}
 	}
 	void insertlast(int k){
