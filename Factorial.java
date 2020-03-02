@@ -1,26 +1,20 @@
 import java.util.*;
-public class Factorial{
-		
+class Factorial{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int fact=1;
+		int num;
+		System.out.println("Enter a Number");
+		num=sc.nextInt();
+		if(num==0 || num==1)
+			System.out.println("1");
+		else if(num<0)
+			System.out.println("factorial of negarive number is not allowed");
+		else{
+			for(int i=1;i<=num;i++)
+				fact=fact*i;
+			System.out.println(fact);
+		}
 
-		public static void main(String[] args) {
-			fac f=new fac();
-			
-			System.out.println("enter the number");
-			Scanner sc=new Scanner(System.in);
-			int n=sc.nextInt();
-			int p=f.fact(n);
-			System.out.println("Factorial is "+p);
-
-
-	}
-}
-
-class fac{
-	public int fact(int n)
-		{
-		if(n<=0)
-			return 1;
-		else
-			return (n*fact(n-1));
 	}
 }
