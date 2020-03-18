@@ -14,7 +14,7 @@ class functions{
 	}
 }
 
-class SelectionSort{
+class BuubleSort{
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
 		functions f=new functions();
