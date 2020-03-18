@@ -13,8 +13,8 @@ class function{
 	}
 	public void binarySearch(int arr[],int key){
 		int first=0,last=arr.length-1;
-		while(first<last){
-			int mid=(first+last)/2;
+		int mid=(first+last)/2;
+		while(first<=last){
 			if(arr[mid]==key){
 				int m=mid+1;
 				System.out.println("\n "+key+"found at position"+m);
@@ -25,6 +25,7 @@ class function{
 			}
 			else
 				first=mid+1;
+			mid=(first+last)/2;
 		}
 	}
 }
