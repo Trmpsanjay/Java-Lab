@@ -6,19 +6,32 @@ public class ArrayOperationWithoutMerge
 	{
 		Scanner sc=new Scanner(System.in);
 		int loc,val,pos;
+		int choice;
 
 		functions f=new functions();
 		int array[]=new int[100];
-		int n;
-		System.out.println("Enter the no elements to be inserted");
+		//int n;
+		//System.out.println("Enter the no elements to be inserted");
+		//n=sc.nextInt();
+		//for(int i=0;i<n;i++)
+		//{
+		//	array[i]=sc.nextInt();
+		//}
+		
+			int n;
+		System.out.println("Enter the size and elements to be inserted");
 		n=sc.nextInt();
 		for(int i=0;i<n;i++)
 		{
 			array[i]=sc.nextInt();
+			//break;
 		}
+		do{
 		System.out.print("press \n 1.display \n 2.insert \n 3.Delete ");
 		
-		int choice=sc.nextInt();
+		//choice=sc.nextInt();
+
+		choice=sc.nextInt();
 		switch(choice)
 		{
 			case 1: {f.display(array,n);
@@ -37,14 +50,17 @@ public class ArrayOperationWithoutMerge
 				n--;
 				f.display(array,n);
 				break;
+				//default;
 			}
 
-
-		}
-
+        }
+    }
 		
-	}
+     while(choice<4);
+		
+	
 
+}
 }
 
 
@@ -65,7 +81,7 @@ class functions
 	public void delete(int arr[],int size,int location2)
 	{
 //out.println("Enter the element position to be deleted");
-		for(int i=location2;i<size;i++)
+		for(int i=location2-1;i<size;i++)
 		{
 			arr[i]=arr[i+1];
 		}
