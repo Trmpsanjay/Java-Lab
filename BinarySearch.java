@@ -49,3 +49,30 @@ class BinarySearch{
 		f.binarySearch(arr1,serach);
 	}
 }
+
+
+/* 
+
+you can use also this recursion method
+public class solution {
+    private static int binarySearch(int input[],int element,int si,int ei){
+      int mid= (si+ei)/2;
+        if(ei<si)
+            return -1;
+        if(input[mid]==element)
+            return mid;
+        if(input[mid]>element)
+            return binarySearch(input,element,si,mid-1);
+        else
+            return binarySearch(input,element,mid+1,ei);
+    }
+
+
+	// element - number to be searched
+	public static int binarySearch(int input[], int element) {
+        return binarySearch(input,element,0,input.length-1);
+		// Write your code here
+
+	}
+}
+*/
