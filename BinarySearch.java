@@ -27,6 +27,9 @@ class function{
 				first=mid+1;
 			mid=(first+last)/2;
 		}
+		if(first>last){
+			System.out.println("\n element not found");
+		}
 	}
 }
 
